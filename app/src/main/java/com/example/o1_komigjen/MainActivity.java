@@ -11,13 +11,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnGallery, btnQuiz;
+    private Button btnGallery, btnQuiz;
+
+    DBHelper DB;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         btnGallery = findViewById(R.id.btnGallery);
         btnQuiz = findViewById(R.id.btnQuiz);

@@ -5,28 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AddPhotoActivity">
 
-    <Button
-        android:id="@+id/btnGallery"
+    <ImageView
+        android:id="@+id/imgPhotoToBeAdded"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="Gallery"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnQuiz"
+    <EditText
+        android:id="@+id/inpName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        app:layout_constraintTop_toBottomOf="@+id/imgPhotoToBeAdded"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Insert into DB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGallery"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintTop_toBottomOf="@+id/inpName"
+        app:layout_constraintVertical_bias="0.036" />
 </androidx.constraintlayout.widget.ConstraintLayout>
